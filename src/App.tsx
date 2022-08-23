@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import AddToList from './components/AddToList';
 import List from './components/List'
 
 interface IState {
@@ -26,6 +27,7 @@ const [people, setPeople] = useState<IState['people']>([
     <div className="App">
       <h1>People invited to my Party</h1>
       <List people={people}/>
+      <AddToList />
     </div>
   );
 }
