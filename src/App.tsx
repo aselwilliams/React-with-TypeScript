@@ -12,7 +12,14 @@ interface IState {
 }
 
 function App() {
-const [people, setPeople] = useState<IState['people']>([])
+const [people, setPeople] = useState<IState['people']>([
+  {
+    name: 'LeBron James',
+    url: 'https://i.insider.com/5e8f40f48427e93cda69589a?width=1136&format=jpeg',
+    age: 36,
+    note: 'Allegeric to staying on the same team'
+  }
+])
 
 
   return (
